@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Important pages
+Allow: /index.html
+Allow: /
+
+# Block admin/config files
+Disallow: /netlify.toml
+Disallow: /components/
+Disallow: /data/
+Disallow: /pages/
+
+# Sitemap location
+Sitemap: https://printguys-safety.netlify.app/sitemap.xml

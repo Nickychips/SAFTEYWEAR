@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Wear & High Visibility Apparel | PrintGuys Canada | CSA/ANSI Compliant</title>
+    <meta name="description" content="Professional safety wear and high visibility apparel. CSA/ANSI compliant vests, jackets, shirts. Custom branding available. Bulk pricing from $10.50. Call 647-685-6286.">
+    <meta name="keywords" content="safety wear Canada, high visibility apparel, CSA compliant clothing, ANSI safety wear, custom safety shirts, reflective vests">
+    <link rel="canonical" href="https://printguys.ca/safety-wear">
+    <link rel="icon" type="image/png" href="/assets/images/logo/printguys logotb.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        /* Global Safety Wear Styles */
+        .contact-banner{background-color:#dc2626;}
+        .floating-cta{position:fixed;bottom:20px;right:20px;z-index:1000;}
+        .services-dropdown{position:relative;}
+        .dropdown-menu{position:absolute;top:100%;left:0;background:#111827;border:1px solid #374151;border-radius:0.75rem;box-shadow:0 20px 25px -5px rgba(0,0,0,0.5);z-index:1000;min-width:280px;opacity:0;visibility:hidden;transform:translateY(-10px);transition:all 0.3s ease;}
+        .services-dropdown:hover .dropdown-menu{opacity:1;visibility:visible;transform:translateY(0);}
+        .service-item{display:flex;align-items:center;padding:12px 16px;border-bottom:1px solid #374151;transition:background-color 0.2s ease;}
+        .service-item:hover{background-color:#1f2937;}
+        .service-item:last-child{border-bottom:none;}
+        .service-icon{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-right:12px;}
+        .service-info h4{font-weight:600;color:white;margin:0 0 2px 0;font-size:14px;}
+        .service-info p{margin:0;color:#9CA3AF;font-size:12px;}
+        .price-badge{background:#ef4444;color:white;font-size:10px;font-weight:bold;padding:2px 6px;border-radius:4px;margin-left:auto;}
+    </style>
+</head>
+<body class="bg-black text-white">
+
+    <!-- Contact Banner -->
+    <div class="contact-banner py-2 px-4">
+        <div class="container mx-auto text-center">
+            <div class="text-white font-semibold">
+                <span class="mr-4">Contact Nick:</span>
+                <a href="tel:6476856286" class="hover:underline font-bold mr-4">647-685-6286</a>
+                <span class="hidden sm:inline">|</span>
+                <a href="mailto:printguys.ca@gmail.com" class="hover:underline font-bold sm:ml-4">printguys.ca@gmail.com</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="bg-black border-b border-red-600">
+        <div class="container mx-auto px-4">
+            <nav class="flex items-center justify-between py-4">
+                <a href="/"><img src="/assets/images/logo/printguys logotb.png" alt="PrintGuys Logo" class="h-8 md:h-10"></a>
+                
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="/" class="text-white hover:text-red-500 transition-colors">Home</a>
+                    
+                    <!-- Services Dropdown -->
+                    <div class="services-dropdown">
+                        <button class="text-white hover:text-red-500 transition-colors flex items-center">
+                            Services
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="/dtf" class="service-item">
+                                <div class="service-icon bg-red-600">🔥</div>
+                                <div class="service-info">
+                                    <h4>DTF Heat Transfers</h4>
+                                    <p>Premium transfers for any fabric</p>
+                                </div>
+                                <span class="price-badge">$0.038/sq"</span>
+                            </a>
+                            <a href="/screen-printing" class="service-item">
+                                <div class="service-icon bg-blue-600">⚡</div>
+                                <div class="service-info">
+                                    <h4>Screen Printing</h4>
+                                    <p>Bulk orders, vibrant colors</p>
+                                </div>
+                            </a>
+                            <a href="/embroidery" class="service-item">
+                                <div class="service-icon bg-purple-600">🧵</div>
+                                <div class="service-info">
+                                    <h4>Custom Embroidery</h4>
+                                    <p>Professional logo stitching</p>
+                                </div>
+                            </a>
+                            <a href="/safety-wear" class="service-item">
+                                <div class="service-icon bg-yellow-600">🦺</div>
+                                <div class="service-info">
+                                    <h4>Safety Wear</h4>
+                                    <p>CSA/ANSI compliant apparel</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <a href="/portfolio" class="text-white hover:text-red-500 transition-colors">Portfolio</a>
+                    <a href="/about" class="text-white hover:text-red-500 transition-colors">About</a>
+                    <a href="/contact" class="text-white hover:text-red-500 transition-colors">Contact</a>
+                </div>
+
+                <div class="hidden md:block">
+                    <a href="/contact" class="bg-red-600 text-white px-6 py-2 rounded-lg font-bold hover:bg-red-700 transition-colors">Get Quote</a>
+                </div>
+
+                <button class="md:hidden text-white" id="mobile-menu-btn">☰</button>
+            </nav>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="py-4 space-y-4 border-t border-red-600">
+                    <a href="/" class="block text-white">Home</a>
+                    <a href="/services" class="block text-white">Services</a>
+                    <a href="/portfolio" class="block text-white">Portfolio</a>
+                    <a href="/about" class="block text-white">About</a>
+                    <a href="/contact" class="block text-white">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- COMPONENT: Hero Section -->
+    <!-- Load from: components/safety-wear/hero-section.html -->
+    
+    <!-- COMPONENT: Product Categories -->
+    <!-- Load from: components/safety-wear/product-categories.html -->
+    
+    <!-- COMPONENT: Popular Items Pricing -->
+    <!-- Load from: components/safety-wear/popular-items-pricing.html -->
+    
+    <!-- COMPONENT: Detailed Pricing Tables -->
+    <!-- Load from: components/safety-wear/detailed-pricing-tables.html -->
+    
+    <!-- COMPONENT: Custom Branding & CTA -->
+    <!-- Load from: components/safety-wear/custom-branding-cta.html -->
+
+    <!-- Floating CTA -->
+    <div class="floating-cta">
+        <a href="/contact" class="bg-yellow-600 text-black px-6 py-3 rounded-full font-bold hover:bg-yellow-700 transition-colors shadow-lg">Get Quote</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-red-600 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <img src="/assets/images/logo/printguys logotb.png" alt="PrintGuys Logo" class="h-12 mx-auto md:mx-0 mb-4">
+                    <p class="text-gray-400">Canada's premier DTF printing service</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Quick Links</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <div><a href="/portfolio" class="hover:text-red-500">Portfolio</a></div>
+                        <div><a href="/pricing" class="hover:text-red-500">Pricing</a></div>
+                        <div><a href="/faq" class="hover:text-red-500">FAQ</a></div>
+                        <div><a href="/services" class="hover:text-red-500">All Services</a></div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-4">Contact PrintGuys</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <div><a href="tel:6476856286" class="text-white hover:text-red-500 font-bold">647-685-6286</a></div>
+                        <div><a href="mailto:printguys.ca@gmail.com" class="text-white hover:text-red-500 font-bold">printguys.ca@gmail.com</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 PrintGuys. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
